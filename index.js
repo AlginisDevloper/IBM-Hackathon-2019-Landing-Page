@@ -1,7 +1,3 @@
-'use strict';
-
-//
-
 digitalData = {
     "page": {
         "category": {
@@ -39,4 +35,17 @@ IBMCore.common.util.config.set({
             "enabled": false
         }
     }
+});
+
+$(document).ready(function () {
+    setTimeout(function () {
+        $('#ibm-search-module').remove();
+        $('.ibm-masthead-item-signin').remove();
+        $('.ibm-mobilemenu-section').each(function(index){
+            if (index === 1){
+                $(this).remove();
+            }
+        });
+        $('#ibm-footer-locale-selector').remove();
+    }, 150)
 });
