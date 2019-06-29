@@ -47,5 +47,5 @@ $(document).ready(function () {
             }
         });
         $('#ibm-footer-locale-selector').remove();
-    }, 150)
+    }, 1000)
 });
