@@ -1,38 +1,23 @@
-    #toolkit-cards{
-        height:350px;
-   
-    }
-
-
-
+.toolkit-cards {
+  height: 350px;
+}
 @media (max-width: 1239px) {
-    #toolkit-cards{
-        height: 400px;
-   
-    }
+  .toolkit-cards {
+    height: 400px;
+  }
 }
-
-
 @media (max-width: 759px) {
-    #toolkit-cards{
-        height: 500px;
-   
-    }
+  .toolkit-cards {
+    height: 500px;
+  }
 }
-
-
-
 @media (max-width: 579px) {
-    #toolkit-cards{
-        height: 350px;
-   
-    }
+  .toolkit-cards {
+    height: 350px;
+  }
 }
-
-
 @media (max-width: 336px) {
-    #toolkit-cards{
-        height: 400px;
-   
-    }
+  .toolkit-cards {
+    height: 400px;
+  }
 }
