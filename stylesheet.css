@@ -1,6 +1,22 @@
 .toolkit-cards {
   height: 350px;
 }
+
+#ibm-search-module{
+	display: none !important;
+}
+.ibm-masthead-item-signin{
+	display: none !important;
+}
+
+#ibm-footer-locale-selector{
+	display: none !important;
+}
+
+.ibm-mobilemenu-section .ibm-mobilemenu-mhlinks{
+	display: none !important;
+}
+
 @media (max-width: 1239px) {
   .toolkit-cards {
     height: 400px;
