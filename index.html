@@ -68,6 +68,8 @@
             }
         };
 
+
+
         IBMCore.common.util.config.set({
             masthead: {
                 type: "alternate"
@@ -77,7 +79,10 @@
                 socialLinks: {
                     enabled: false
                 }
-            }
+            },
+            sharethiscontent: {
+        enabled: true
+    }   
         });
     </script>
     <!--Scripts-->
@@ -136,7 +141,7 @@
                             <h3 id="ibm-pagetitle-h3" class="ibm-h3 ibm-light">Innovate for a better environment !
                   </h3>
                             <!-- TODO: Add Form Link-->
-                            <p class="ibm-ind-link"><a class="ibm-forward-link ibm-icon-left" href="https://docs.google.com/forms/d/1ZFSB2rlB6_m5y0686KbbUj4xbFo0g0KY_ID7WVD6F_4/viewform?edit_requested=true" target="_blank">JOIN NOW</a
+                            <p class="ibm-ind-link ibm-h3 ibm-bold"><a class="ibm-forward-link ibm-icon-left" href="https://docs.google.com/forms/d/1ZFSB2rlB6_m5y0686KbbUj4xbFo0g0KY_ID7WVD6F_4/viewform?edit_requested=true" target="_blank">JOIN NOW</a
                     ></p
                   >
                 </div>
@@ -149,6 +154,9 @@
                 >
                   <div class="ibm-columns" style="color: white">
                     <div class="ibm-col-6-2" style="padding: 25px">
+                        <div >
+                            <h3 class="ibm-h3">1st Winning Team</h3>
+                        </div>
                       <div class="ibm-card--noborder ibm-padding-top-1">
                         <div class="ibm-card__image">
                           <img
@@ -162,6 +170,9 @@
 
                     <div class="ibm-col-6-2" style="padding: 25px">
                       <div class="ibm-card--noborder">
+                          <div>
+                              <h3 class="ibm-h3">2nd Winning Team</h3>
+                          </div>
                         <div class="ibm-card__image ibm-padding-top-1">
                           <img
                             src="./resources/images/Silver-edit.png"
@@ -173,6 +184,9 @@
                     </div>
                     <div class="ibm-col-6-2" style="padding: 25px">
                       <div class="ibm-card--noborder">
+                          <div>
+                              <h3 class="ibm-h3">3rd Winning Team</h3>
+                          </div>
                         <div class="ibm-card__image ibm-padding-top-1">
                           <img
                             src="./resources//images/bronzeMedal-edit.png"
@@ -206,10 +220,10 @@
                     <a role="tab" href="#ibm-top">Home</a>
                                 </li>
                                 <li>
-                                    <a role="tab" href="#Details">Hackathon Details</a>
+                                    <a role="tab" href="#Details">Competetion Details</a>
                                 </li>
                                 <li>
-                                    <a role="tab" href="#Timeline">Hackathon Timeline</a>
+                                    <a role="tab" href="#Timeline">Competetion Timeline</a>
                                 </li>
                                 <li>
                                     <a role="tab" href="#Meet">Meet us</a>
@@ -238,32 +252,14 @@
                             <div class="ibm-band ibm-alternate-background ibm-padding-top-90 ibm-padding-bottom-90" data-widget="parallaxscroll" style="color: black; background-image: url(resources/images/611636354.jpg)">
                                 <div class="ibm-grid-container">
                                     <div id="Details" class="ibm-grid-col-sm-4-4  ibm-padding-content ibm-padding-top-30 ibm-padding-bottom-30 ibm-margin-bottom-2" style="background: rgba(255, 255, 255, 0.8); ">
-                                        <h1 class="ibm-h1 ibm-padding-bottom-30">Hackathon Details</h1
+                                        <h1 class="ibm-h1 ibm-padding-bottom-30">Competetion Details</h1
                         >
                         <p
-                          >IBM is announcing IBM Digital–Nation Competition in
-                          collaboration with ITI (MCIT’s technical delivery
-                          arm), Am Cham and Bibliotheca Alexanderia. The
-                          competition addresses Egypt pollution issues (air,
-                          water, noise, light, soil, etc.) and the solutions
-                          that can be proposed by Egyptian youth to deal with
-                          escalating pollution crisis. <br />
+                          >IBM is announcing IBM Digital – Nation Competition in collaboration with <a href="http://www.iti.gov.eg/" target="__blank" style="color: black; text-decoration: underline; font-weight: bold">Information Technology Institute (ITI)</a> and the <a href="https://www.amcham.org.eg/" target="__blank" style="color: black; text-decoration: underline; font-weight: bold">American Chamber of Commerce (AmCham)</a>.  The competition addresses Egypt pollution issues (air, water, noise, light, soil, etc...) and the solutions that can be proposed by Egyptian youth to deal with escalating pollution crisis.  Emerging Technologies such as AI, IoT, Cloud, Analytics, and Blockchain, coupled by smart innovative IT developers and research, can help reduce pollution. <br />
                           <br />
-                          IBM aims to leverage its latest MEA academic
-                          initiative: IBM Digital - Nation Africa , and latest
-                          emerging technologies via IBM Cloud to help developers
-                          learn, innovate, and build solutions to help Egypt
-                          reduce pollution and prevent disasters like drought,
-                          floods, and massive fatal diseases like cancer,
-                          strokes, and hypertension.
+                          IBM aims to leverage its latest MEA academic initiative <a href="https://ibm.biz/egcompetitiom-dna" target="__blank" style="color: black; text-decoration: underline; font-weight: bold">IBM Digital - Nation Africa</a> , and latest emerging technologies via IBM Cloud to help developers learn, innovate, and build solutions to help Egypt reduce pollution and prevent disasters like drought, floods, and massive fatal diseases like cancer, strokes, and hypertension. 
                         </p>
-                        <p class="ibm-button-link ibm-padding-top-30"
-                          ><a
-                            href="#ibm-top"
-                            class="ibm-btn-pri ibm-btn-magenta-50"
-                            >Know more</a
-                          ></p
-                        >
+                        
                       </div>
 
                       <div
@@ -415,6 +411,15 @@
                             visibleItems: 6
                           });
                         </script>
+                        <p class="ibm-button-link ibm-padding-top-30"
+                        ><a
+                          href="resources/documents/Timeline.pdf"
+                          class="ibm-btn-pri ibm-btn-magenta-50"
+                          download="Competetion Details"
+                          target="_blank"
+                          >Know more</a
+                        ></p
+                      >
                       </div>
 
                       <div
@@ -429,9 +434,9 @@
                           Competition, its rules, guidelines, and how to join.
                           Register Here to attend IBM workshop.
                         </p>
-                        <p class="ibm-button-link ibm-padding-top-30"
-                          ><a href="#" class="ibm-btn-pri ibm-btn-magenta-50"
-                            >Book your seat</a
+                        <p class="ibm-button-link ibm-padding-top-30" 
+                          ><a class="ibm-btn-pri ibm-btn-magenta-50"
+                            >Stay Tuned</a
                           ></p
                         >
                       </div>
@@ -569,38 +574,34 @@
                   </div>
 
                   <div class="ibm-columns" style="color: white">
-                    <div class="ibm-col-6-2" style="padding: 25px">
+                    <div class="ibm-col-6-3" style="padding: 25px">
                       <div class="ibm-card--noborder">
                         <div class="ibm-card__image  ">
-                          <img
-                            src="./resources/images/iti.png"
-                            alt="iti"
-                            width="180"
-                            class="ibm-downsize"
-                        /></div>
+                          <a href="http://www.iti.gov.eg/" target="__blank">
+                              <img
+                              src="./resources/images/iti.png"
+                              alt="iti"
+                              width="180"
+                              class="ibm-downsize"
+                          />
+                          </a>
+                          </div>
                       </div>
                     </div>
 
-                    <div class="ibm-col-6-2" style="padding: 25px">
+                    <div class="ibm-col-6-3" style="padding: 25px">
                       <div class="ibm-card--noborder">
                         <div class="ibm-card__image ibm-padding-top-1">
-                          <img
-                            src="./resources/images/amcham.png"
-                            alt="Am Cham"
-                            width="220"
-                            class="ibm-downsize"
-                        /></div>
-                      </div>
-                    </div>
-                    <div class="ibm-col-6-2" style="padding: 25px">
-                      <div class="ibm-card--noborder ">
-                        <div class="ibm-card__image ibm-padding-top-1">
-                          <img
-                            src="./resources//images/biblio.png"
-                            alt="Bibliotheca Alexanderia"
-                            width="200"
-                            class="ibm-downsize"
-                        /></div>
+                          <a href="https://www.amcham.org.eg/" target="__blank">
+                              <img
+                              src="./resources/images/amcham.png"
+                              alt="Am Cham"
+                              width="220"
+                              class="ibm-downsize"
+                          />
+
+                          </a>
+                          </div>
                       </div>
                     </div>
                   </div>
@@ -611,6 +612,7 @@
         </main>
       </div>
     </div>
+
 
     <div id="ibm-related-content">
       <div id="ibm-merchandising-module">
