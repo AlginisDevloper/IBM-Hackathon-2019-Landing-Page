@@ -2,29 +2,30 @@
   height: 350px;
 }
 
-.disable-link{
-    background-color: grey !important;
-    border-color: grey !important;
+.disable-link {
+  background-color: grey !important;
+  border-color: grey !important;
 }
 
-.disable-link:hover{
-    background-color: grey !important;
-    border-color: grey !important;
+.disable-link:hover {
+  background-color: grey !important;
+  border-color: grey !important;
 }
 
-#ibm-search-module{
-	display: none !important;
-}
-.ibm-masthead-item-signin{
-	display: none !important;
+#ibm-search-module {
+  display: none !important;
 }
 
-#ibm-footer-locale-selector{
-	display: none !important;
+.ibm-masthead-item-signin {
+  display: none !important;
 }
 
-.ibm-mobilemenu-section .ibm-mobilemenu-mhlinks{
-	display: none !important;
+#ibm-footer-locale-selector {
+  display: none !important;
+}
+
+.ibm-mobilemenu-section .ibm-mobilemenu-mhlinks {
+  display: none !important;
 }
 
 @media (max-width: 1239px) {
@@ -32,16 +33,19 @@
     height: 400px;
   }
 }
+
 @media (max-width: 759px) {
   .toolkit-cards {
     height: 500px;
   }
 }
+
 @media (max-width: 579px) {
   .toolkit-cards {
     height: 350px;
   }
 }
+
 @media (max-width: 336px) {
   .toolkit-cards {
     height: 400px;
@@ -50,39 +54,46 @@
 
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
-    position: fixed;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 /* Style the icon bar links */
 .icon-bar a {
-    display: block;
-    text-align: center;
-    padding: 16px;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 20px;
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
 }
 
 /* Style the social media icons with color, if you want */
 .icon-bar a:hover {
-    background-color: #000;
+  background-color: #000;
 }
 
 .facebook {
-    background: #3B5998;
-    color: white;
+  background: #3B5998;
+  color: white;
 }
 
 .twitter {
-    background: #55ACEE;
-    color: white;
+  background: #55ACEE;
+  color: white;
 }
 
 .linkedin {
-    background: #007bb5;
-    color: white;
+  background: #007bb5;
+  color: white;
 }
+
+/*This media query is used to show the mobilemenu-section for the menu navigation
+default behaviour without the media query is to only show the nav links when the screen is at 900px*/
+@media screen and (min-width: 1109.8125px) {
+  .ibm-mobilemenu-sitenavmenu>ul>li {
+    display: list-item !important;
+  }

@@ -228,5 +228,6 @@ typings/
 # Extras
 .idea/IBM-Hackathon-2019-Landing-Page.iml
 .idea/vcs.xml
+draft.html
 
 # End of https://www.gitignore.io/api/node,webstorm,jetbrains
