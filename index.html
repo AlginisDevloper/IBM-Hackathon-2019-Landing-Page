@@ -7,9 +7,9 @@
 <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html dir="ltr" lang="en-EG" class="no-js">
-<!--<![endif]-->
+  <!--<![endif]-->
 
-<head>
+  <head>
     <!--Meta Data-->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,11 +17,18 @@
     <meta name="author" content="Ahmed Abd El-Aziz & Omar Handouk" />
     <!-- https://www.linkedin.com/in/ahmed-abdelaziz-967747139/ -->
     <!-- https://www.linkedin.com/in/omar-handouk/ -->
-    <meta name="description" content="Digital Nation Competition 2019 Egypt Hackathon" />
+    <meta
+      name="description"
+      content="Digital Nation Competition 2019 Egypt Hackathon"
+    />
     <meta name="keywords" content="Hackathon, Competition, Egypt, 2019" />
     <!--Meta Data-->
     <!--Title & Favicon-->
-    <link rel="shortcut icon" href="https://www.ibm.com/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link
+      rel="shortcut icon"
+      href="https://www.ibm.com/favicon.ico"
+      type="image/vnd.microsoft.icon"
+    />
     <title>IBM Digital - Nation Competition '19</title>
     <!--Title & Favicon-->
     <!--Canonical-->
@@ -36,491 +43,700 @@
     <!--Miscs-->
     <!--Stylesheets-->
     <link rel="stylesheet" href="stylesheet.css" />
-    <link rel="stylesheet" href="https://1.www.s81c.com/common/v18/css/www.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://1.www.s81c.com/common/v18/css/www.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link href="dist/css/timeline.min.css" rel="stylesheet" />
     <!--Stylesheets-->
     <!--Scripts-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://1.www.s81c.com/common/v18/js/www.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://1.www.s81c.com/common/v18/js/www.js"
+    ></script>
     <script type="text/javascript">
-        digitalData = {
-            page: {
-                category: {
-                    primaryCategory: "REPLACE"
-                },
-                pageInfo: {
-                    effectiveDate: "REPLACE",
-                    expiryDate: "REPLACE",
-                    language: "en-EG",
-                    publishDate: "REPLACE",
-                    publisher: "IBM Corporation",
-                    version: "v18",
-                    pageID: "REPLACE",
-                    ibm: {
-                        contentDelivery: "HTML",
-                        contentProducer: "",
-                        country: "EG",
-                        industry: "REPLACE",
-                        owner: "IBM",
-                        siteID: "REPLACE",
-                        subject: "REPLACE",
-                        type: "REPLACE"
-                    }
-                }
+      digitalData = {
+        page: {
+          category: {
+            primaryCategory: "REPLACE"
+          },
+          pageInfo: {
+            effectiveDate: "REPLACE",
+            expiryDate: "REPLACE",
+            language: "en-EG",
+            publishDate: "REPLACE",
+            publisher: "IBM Corporation",
+            version: "v18",
+            pageID: "REPLACE",
+            ibm: {
+              contentDelivery: "HTML",
+              contentProducer: "",
+              country: "EG",
+              industry: "REPLACE",
+              owner: "IBM",
+              siteID: "REPLACE",
+              subject: "REPLACE",
+              type: "REPLACE"
             }
-        };
+          }
+        }
+      };
 
-        IBMCore.common.util.config.set({
-            masthead: {
-                type: "alternate"
-            },
-            footer: {
-                type: "alternate",
-                socialLinks: {
-                    enabled: false
-                }
+      IBMCore.common.util.config.set({
+        masthead: {
+          type: "alternate"
+        },
+        footer: {
+          type: "alternate",
+          socialLinks: {
+            enabled: false
+          }
+        }
+      });
+
+      let sections = [
+        "#ibm-top",
+        "#Details",
+        "#Timeline",
+        "#Meet",
+        "#Toolkit",
+        "#Partners",
+        "mailto:IBMUREG@eg.ibm.com"
+      ];
+      $(document).ready(function() {
+        setTimeout(function() {
+          let i = 0;
+          $("#nav-mat li a").each(function(index) {
+            if (index !== 0) {
+              $(this).attr("href", sections[i]);
+              ++i;
             }
-        });
+          });
 
-        let sections = ['#ibm-top', '#Details', '#Timeline', '#Meet', '#Toolkit', '#Partners',
-            'mailto:IBMUREG@eg.ibm.com'
-        ];
-        $(document).ready(function () {
-            setTimeout(function () {
-                let i = 0;
-                $('#nav-mat li a').each(function (index) {
-                    if (index !== 0) {
-                        $(this).attr('href', sections[i]);
-                        ++i;
-                    }
-                });
-
-                let contactLink = $('#ibm-footer ul > :first-child a');
-                contactLink.attr('href', 'mailto:IBMUREG@eg.ibm.com');
-                contactLink.attr('target', '_blank')
-            }, 2000);
-        });
+          let contactLink = $("#ibm-footer ul > :first-child a");
+          contactLink.attr("href", "mailto:IBMUREG@eg.ibm.com");
+          contactLink.attr("target", "_blank");
+        }, 2000);
+      });
     </script>
     <!--Scripts-->
-</head>
+  </head>
 
-<body id="ibm-com" class="ibm-type">
+  <body id="ibm-com" class="ibm-type">
     <div id="ibm-top" class="ibm-landing-page">
-        <!--[if lt IE 7]>
-    <p class="browsehappy"
-    >You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.</p
-    >
-    <![endif]-->
-        <!-- MASTHEAD_BEGIN -->
-        <div id="ibm-masthead" role="banner" aria-label="IBM">
-            <div id="ibm-universal-nav">
-                <div id="ibm-home"><a href="https://www.ibm.com/eg-en/">IBM®</a></div>
-                <ul id="ibm-menu-links" role="toolbar" aria-label="Site map">
-                    <li><a href="https://www.ibm.com/sitemap/eg/en/">Site map</a></li>
-                </ul>
+      <!--[if lt IE 7]>
+        <p class="browsehappy"
+          >You are using an <strong>outdated</strong> browser. Please
+          <a href="#">upgrade your browser</a> to improve your experience.</p
+        >
+      <![endif]-->
+      <!-- MASTHEAD_BEGIN -->
+      <div id="ibm-masthead" role="banner" aria-label="IBM">
+        <div id="ibm-universal-nav">
+          <div id="ibm-home"><a href="https://www.ibm.com/eg-en/">IBM®</a></div>
+          <ul id="ibm-menu-links" role="toolbar" aria-label="Site map">
+            <li><a href="https://www.ibm.com/sitemap/eg/en/">Site map</a></li>
+          </ul>
 
-                <div id="ibm-search-module" role="search" aria-labelledby="ibm-masthead">
-                    <form id="ibm-search-form" action="https://www.ibm.com/Search/" method="get">
-                        <p>
-                            <label for="q"><span class="ibm-access">Search</span></label>
-                            <input type="text" maxlength="100" value="" name="q" id="q" />
-                            <input type="hidden" value="17" name="v" />
-                            <input type="hidden" value="utf" name="en" />
-                            <input type="hidden" value="en" name="lang" />
-                            <input type="hidden" value="eg" name="cc" />
-                            <input type="submit" id="ibm-search" class="ibm-btn-search" value="Submit" />
+          <div
+            id="ibm-search-module"
+            role="search"
+            aria-labelledby="ibm-masthead"
+          >
+            <form
+              id="ibm-search-form"
+              action="https://www.ibm.com/Search/"
+              method="get"
+            >
+              <p>
+                <label for="q"><span class="ibm-access">Search</span></label>
+                <input type="text" maxlength="100" value="" name="q" id="q" />
+                <input type="hidden" value="17" name="v" />
+                <input type="hidden" value="utf" name="en" />
+                <input type="hidden" value="en" name="lang" />
+                <input type="hidden" value="eg" name="cc" />
+                <input
+                  type="submit"
+                  id="ibm-search"
+                  class="ibm-btn-search"
+                  value="Submit"
+                />
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- MASTHEAD_END -->
+      <!--Navigation-->
+      <nav role="navigation" aria-label="__REPLACE_ME__">
+        <div class="ibm-sitenav-menu-container">
+          <div class="ibm-sitenav-menu-name"
+            ><a
+              href="https://developer.ibm.com/africa/egypt-competition/"
+              target="_self"
+              >IBM Digital - Nation Competition</a
+            ></div
+          >
+          <div class="ibm-sitenav-menu-list">
+            <ul role="menubar" id="nav-mat">
+              <li role="presentation"
+                ><a role="menuitem" href="#ibm-top" data-altlabel="Home"
+                  >Home</a
+                ></li
+              >
+              <li role="presentation"
+                ><a
+                  role="menuitem"
+                  href="#Details"
+                  data-altlabel="Competition Details"
+                  >Competition Details</a
+                ></li
+              >
+              <li role="presentation"
+                ><a
+                  role="menuitem"
+                  href="#Timeline"
+                  data-altlabel="Competition Timeline"
+                  >Competition Timeline</a
+                ></li
+              >
+              <li role="presentation"
+                ><a role="menuitem" href="#Toolkit" data-altlabel="Toolkit"
+                  >Toolkit</a
+                >
+              </li>
+              <li role="presentation"
+                ><a role="menuitem" href="#Meet" data-altlabel="Meet Us"
+                  >Meet Us</a
+                ></li
+              >
+              <li role="presentation"
+                ><a
+                  role="menuitem"
+                  href="#Partners"
+                  data-altlabel="Our Partners"
+                  >Our Partners</a
+                ></li
+              >
+              <li role="presentation"
+                ><a
+                  role="menuitem"
+                  href="mailto:IBMUREG@eg.ibm.com"
+                  target="_blank"
+                  data-altlabel="Contact Us"
+                  >Contact Us</a
+                ></li
+              >
+              <!-- Optional right side CTA link -->
+              <li class="ibm-sitenav-menu-item-right">
+                <p class="ibm-button-link ibm-nospacing"
+                  ><a
+                    class="ibm-btn-pri ibm-btn-blue-50 ibm-btn-small"
+                    href="https://docs.google.com/forms/d/1ZFSB2rlB6_m5y0686KbbUj4xbFo0g0KY_ID7WVD6F_4/viewform?edit_requested=true"
+                    target="_blank"
+                    data-altlabel="Register"
+                    >Register</a
+                  ></p
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Navigation-->
+      <div id="ibm-content-wrapper">
+        <!-- LEADSPACE_BEGIN -->
+
+        <header role="banner" aria-labelledby="ibm-pagetitle-h1">
+          <div
+            id="ibm-leadspace-head"
+            class="ibm-background-blue-core ibm-alternate-background"
+            style="background-image: url(resources/images/Header-Edit.jpeg); background-repeat: no-repeat; background-size: cover;"
+            data-widget="parallaxscroll"
+          >
+            <div id="ibm-leadspace-body">
+              <div class="ibm-columns">
+                <div class="ibm-col-1-1">
+                  <h1 id="ibm-pagetitle-h1" class="ibm-h1 ibm-light"
+                    >IBM Digital - Nation Competition for Egypt
+                  </h1>
+                  <h3 id="ibm-pagetitle-h3" class="ibm-h3 ibm-light"
+                    >Innovate for a better environment !
+                  </h3>
+                  <p class="ibm-ind-link ibm-h3 ibm-bold"
+                    ><a
+                      class="ibm-forward-link ibm-icon-left"
+                      href="https://docs.google.com/forms/d/1ZFSB2rlB6_m5y0686KbbUj4xbFo0g0KY_ID7WVD6F_4/viewform?edit_requested=true"
+                      target="_blank"
+                      >JOIN NOW</a
+                    ></p
+                  >
+                </div>
+              </div>
+
+              <div class="ibm-grid-container">
+                <div
+                  id="Prizes"
+                  class="ibm-grid-col-sm-4-4  ibm-center ibm-padding-content "
+                >
+                  <div class="ibm-columns" style="color: white">
+                    <div class="ibm-col-6-2" style="padding: 25px">
+                      <div>
+                        <h3 class="ibm-h3">1st Winning Team</h3>
+                      </div>
+                      <div class="ibm-card--noborder ibm-padding-top-1">
+                        <div class="ibm-card__image">
+                          <img
+                            src="./resources/images/GoldenMedal-edit.png"
+                            alt="1st Place"
+                            class="ibm-downsize"
+                            style="width: 250px"
+                        /></div>
+                      </div>
+                    </div>
+
+                    <div class="ibm-col-6-2" style="padding: 25px">
+                      <div class="ibm-card--noborder">
+                        <div>
+                          <h3 class="ibm-h3">2nd Winning Team</h3>
+                        </div>
+                        <div class="ibm-card__image ibm-padding-top-1">
+                          <img
+                            src="./resources/images/Silver-edit.png"
+                            alt="2nd Place"
+                            class="ibm-downsize"
+                            style="width: 250px"
+                        /></div>
+                      </div>
+                    </div>
+                    <div class="ibm-col-6-2" style="padding: 25px">
+                      <div class="ibm-card--noborder">
+                        <div>
+                          <h3 class="ibm-h3">3rd Winning Team</h3>
+                        </div>
+                        <div class="ibm-card__image ibm-padding-top-1">
+                          <img
+                            src="./resources//images/bronzeMedal-edit.png"
+                            alt="3rd Place"
+                            class="ibm-downsize"
+                            style="width: 250px;"
+                        /></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- LEADSPACE_END -->
+        </header>
+        <!--Social Media-->
+        <!-- TODO: Add Social Links-->
+        <div class="icon-bar" style="display: none;">
+          <a
+            href="https://www.facebook.com/sharer.php?t=ShareThis&u=https%3A%2F%2Fdeveloper.ibm.com%2Fafrica%2Fegypt-competition%2F"
+            target="_blank"
+            class="facebook"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a
+            href="https://twitter.com/intent/tweet?text=IBM%20Digital%20Nation%20Egypt%20Competition&url=https%3A%2F%2Fdeveloper.ibm.com%2Fafrica%2Fegypt-competition%2F"
+            target="_blank"
+            class="twitter"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/shareArticle/?title=IBM%20Digital%20Nation%20Egypt%20Competition&url=https%3A%2F%2Fdeveloper.ibm.com%2Fafrica%2Fegypt-competition%2F"
+            target="_blank"
+            class="linkedin"
+            ><i class="fa fa-info" aria-hidden="true"></i
+          ></a>
+        </div>
+        <!--Social Media-->
+        <main role="main" aria-labelledby="ibm-pagetitle-h1">
+          <div id="ibm-pcon">
+            <div id="ibm-content">
+              <div id="ibm-content-body" style="padding-top: 0%">
+                <div id="ibm-content-main">
+                  <div
+                    class="ibm-band ibm-alternate-background ibm-padding-top-90 ibm-padding-bottom-90"
+                    data-widget="parallaxscroll"
+                    style="color: black; background-image: url(resources/images/611636354.jpg)"
+                  >
+                    <div class="ibm-grid-container">
+                      <div
+                        id="Details"
+                        class="ibm-grid-col-sm-4-4  ibm-padding-content ibm-padding-top-30 ibm-padding-bottom-30 ibm-margin-bottom-2"
+                        style="background: rgba(255, 255, 255, 0.8); "
+                      >
+                        <h1 class="ibm-h1 ibm-padding-bottom-30"
+                          >Competition Details</h1
+                        >
+                        <p
+                          >IBM is announcing IBM Digital – Nation Competition in
+                          collaboration with
+                          <a
+                            href="http://www.iti.gov.eg/"
+                            target="_blank"
+                            style="color: #4178be; text-decoration: underline; font-weight: bold"
+                            >Information Technology Institute (ITI)</a
+                          >
+                          and the
+                          <a
+                            href="https://www.amcham.org.eg/"
+                            target="_blank"
+                            style="color: #4178be; text-decoration: underline; font-weight: bold"
+                            >American Chamber of Commerce (AmCham)</a
+                          >. The competition addresses Egypt pollution issues
+                          (air, water, noise, light, soil, etc...) and the
+                          solutions that can be proposed by Egyptian youth to
+                          deal with escalating pollution crisis. Emerging
+                          Technologies such as AI, IoT, Cloud, Analytics, and
+                          Blockchain, coupled by smart innovative IT developers
+                          and research, can help reduce pollution. <br />
+                          <br />
+                          IBM aims to leverage its latest MEA academic
+                          initiative
+                          <a
+                            href="http://ibm.biz/egcompetition-dna"
+                            target="_blank"
+                            style="color: #4178be; text-decoration: underline; font-weight: bold"
+                            >IBM Digital - Nation Africa</a
+                          >
+                          , and latest emerging technologies via IBM Cloud to
+                          help developers learn, innovate, and build solutions
+                          to help Egypt reduce pollution and prevent disasters
+                          like drought, floods, and massive fatal diseases like
+                          cancer, strokes, and hypertension.
                         </p>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- MASTHEAD_END -->
-        <!--Navigation-->
-        <nav role="navigation" aria-label="__REPLACE_ME__">
-            <div class="ibm-sitenav-menu-container">
-                <div class="ibm-sitenav-menu-name"><a href="https://developer.ibm.com/africa/egypt-competition/"
-                        target="_self">IBM Digital - Nation Competition</a></div>
-                <div class="ibm-sitenav-menu-list">
-                    <ul role="menubar" id="nav-mat">
-                        <li role="presentation"><a role="menuitem" href="#ibm-top" data-altlabel="Home">Home</a></li>
-                        <li role="presentation"><a role="menuitem" href="#Details"
-                                data-altlabel="Competition Details">Competition Details</a></li>
-                        <li role="presentation"><a role="menuitem" href="#Timeline"
-                                data-altlabel="Competition Timeline">Competition Timeline</a></li>
-                        <li role="presentation"><a role="menuitem" href="#Toolkit" data-altlabel="Toolkit">Toolkit</a>
-                        </li>
-                        <li role="presentation"><a role="menuitem" href="#Meet" data-altlabel="Meet Us">Meet Us</a></li>
-                        <li role="presentation"><a role="menuitem" href="#Partners" data-altlabel="Our Partners">Our
-                                Partners</a></li>
-                        <li role="presentation"><a role="menuitem" href="mailto:IBMUREG@eg.ibm.com" target="_blank"
-                                data-altlabel="Contact Us">Contact Us</a></li>
-                        <!-- Optional right side CTA link -->
-                        <li class="ibm-sitenav-menu-item-right">
-                            <p class="ibm-button-link ibm-nospacing"><a
-                                    class="ibm-btn-pri ibm-btn-blue-50 ibm-btn-small"
-                                    href="https://docs.google.com/forms/d/1ZFSB2rlB6_m5y0686KbbUj4xbFo0g0KY_ID7WVD6F_4/viewform?edit_requested=true"
-                                    target="_blank" data-altlabel="Register">Register</a></p>
-                        </li>
-                    </ul>
-                </div>
+                      </div>
 
-            </div>
-        </nav>
-        <!--Navigation-->
-        <div id="ibm-content-wrapper">
-            <!-- LEADSPACE_BEGIN -->
+                      <div
+                        id="Timeline"
+                        class="ibm-grid-col-sm-4-4 ibm-left ibm-padding-top-30 ibm-padding-content ibm-padding-bottom-30 ibm-margin-top-2"
+                        style="background: rgba(255, 255, 255, 0.8);"
+                      >
+                        <h1 class="ibm-h1 ibm-padding-bottom-30">Timeline</h1>
 
-            <header role="banner" aria-labelledby="ibm-pagetitle-h1">
-                <div id="ibm-leadspace-head" class="ibm-background-blue-core ibm-alternate-background"
-                    style="background-image: url(resources/images/Header-Edit.jpeg); background-repeat: no-repeat; background-size: cover;"
-                    data-widget="parallaxscroll">
-                    <div id="ibm-leadspace-body">
-                        <div class="ibm-columns">
-                            <div class="ibm-col-1-1">
-                                <h1 id="ibm-pagetitle-h1" class="ibm-h1 ibm-light">IBM Digital - Nation Competition for
-                                    Egypt
-                                </h1>
-                                <h3 id="ibm-pagetitle-h3" class="ibm-h3 ibm-light">Innovate for a better environment !
-                                </h3>
-                                <p class="ibm-ind-link ibm-h3 ibm-bold"><a class="ibm-forward-link ibm-icon-left"
-                                        href="https://docs.google.com/forms/d/1ZFSB2rlB6_m5y0686KbbUj4xbFo0g0KY_ID7WVD6F_4/viewform?edit_requested=true"
-                                        target="_blank">JOIN NOW</a></p>
-                            </div>
+                        <br />
+
+                        <div style="text-align: center; border: black">
+                          <h1 class="ibm-h1 ibm-padding-bottom-20">4 July</h1>
+                          <h3 class="ibm-h3 ibm-padding-bottom-20"
+                            >Registration Start</h3
+                          >
                         </div>
 
-                        <div class="ibm-grid-container">
-                            <div id="Prizes" class="ibm-grid-col-sm-4-4  ibm-center ibm-padding-content ">
-                                <div class="ibm-columns" style="color: white">
-                                    <div class="ibm-col-6-2" style="padding: 25px">
-                                        <div>
-                                            <h3 class="ibm-h3">1st Winning Team</h3>
-                                        </div>
-                                        <div class="ibm-card--noborder ibm-padding-top-1">
-                                            <div class="ibm-card__image">
-                                                <img src="./resources/images/GoldenMedal-edit.png" alt="1st Place"
-                                                    class="ibm-downsize" style="width: 250px" /></div>
-                                        </div>
-                                    </div>
+                        <hr />
 
-                                    <div class="ibm-col-6-2" style="padding: 25px">
-                                        <div class="ibm-card--noborder">
-                                            <div>
-                                                <h3 class="ibm-h3">2nd Winning Team</h3>
-                                            </div>
-                                            <div class="ibm-card__image ibm-padding-top-1">
-                                                <img src="./resources/images/Silver-edit.png" alt="2nd Place"
-                                                    class="ibm-downsize" style="width: 250px" /></div>
-                                        </div>
+                        <div
+                          class="timeline timeline--loaded timeline--horizontal"
+                          style="opacity: 1;"
+                        >
+                          <div class="timeline__wrap">
+                            <div
+                              class="timeline__items"
+                              style="width: 1210.67px; height: 979px; transform: translate3d(0px, 0px, 0px);"
+                            >
+                              <div
+                                class="timeline__item"
+                                style="width: 151.333px; height: 497px; transform: translateY(482px);"
+                              >
+                                <div class="timeline__item__inner">
+                                  <div class="timeline__content__wrap">
+                                    <div class="timeline__content">
+                                      <h2>4 July - 6 August</h2>
+                                      <p>Complete Core Skills Track</p>
                                     </div>
-                                    <div class="ibm-col-6-2" style="padding: 25px">
-                                        <div class="ibm-card--noborder">
-                                            <div>
-                                                <h3 class="ibm-h3">3rd Winning Team</h3>
-                                            </div>
-                                            <div class="ibm-card__image ibm-padding-top-1">
-                                                <img src="./resources//images/bronzeMedal-edit.png" alt="3rd Place"
-                                                    class="ibm-downsize" style="width: 250px;" /></div>
-                                        </div>
-                                    </div>
+                                  </div>
                                 </div>
+                              </div>
+                              <div
+                                class="timeline__item"
+                                style="width: 151.333px; height: 482px;"
+                              >
+                                <div class="timeline__item__inner">
+                                  <div class="timeline__content__wrap">
+                                    <div class="timeline__content">
+                                      <h2>9 August - 3 September</h2>
+                                      <p>Complete Specialization Track</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="timeline__item"
+                                style="width: 151.333px; height: 497px; transform: translateY(482px);"
+                              >
+                                <div class="timeline__item__inner">
+                                  <div class="timeline__content__wrap">
+                                    <div class="timeline__content">
+                                      <h2>12 September</h2>
+                                      <p
+                                        >Attend Team Formation & Ideation Day @
+                                        ITI
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="timeline__item"
+                                style="width: 151.333px; height: 482px;"
+                              >
+                                <div class="timeline__item__inner">
+                                  <div class="timeline__content__wrap">
+                                    <div class="timeline__content">
+                                      <h2>13 September - 19 September</h2>
+                                      <p>Create Project Video</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="timeline__item"
+                                style="width: 151.333px; height: 497px; transform: translateY(482px);"
+                              >
+                                <div class="timeline__item__inner">
+                                  <div class="timeline__content__wrap">
+                                    <div class="timeline__content">
+                                      <h2>3 October - 4 October</h2>
+                                      <p>Attend Hackathon @ IBM</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="timeline__item"
+                                style="width: 151.333px; height: 482px;"
+                              >
+                                <div class="timeline__item__inner">
+                                  <div class="timeline__content__wrap">
+                                    <div class="timeline__content">
+                                      <h2>5 October - 25 October</h2>
+                                      <p>Finalize work on projects</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
+                          </div>
+                          <hr style="margin-top: 10px" />
+                          <div style="text-align: center; margin-top: 20px">
+                            <h1 class="ibm-h1 ibm-padding-bottom-20"
+                              >26 October</h1
+                            >
+                            <h3 class="ibm-h3 ibm-padding-bottom-20"
+                              >Winner Announcement</h3
+                            >
+                          </div>
+                          <br />
+                          <button
+                            class="timeline-nav-button timeline-nav-button--prev"
+                            disabled=""
+                            style="top: 482px;"
+                            >Previous
+                          </button>
+                          <button
+                            class="timeline-nav-button timeline-nav-button--next"
+                            style="top: 482px;"
+                            >Next
+                          </button>
+                          <span
+                            class="timeline-divider"
+                            style="top: 482px;"
+                          ></span>
                         </div>
+                        <script
+                          type="text/javascript"
+                          src="dist/js/timeline.min.js"
+                        ></script>
+                        <script>
+                          timeline(document.querySelectorAll(".timeline"), {
+                            forceVerticalMode: 900,
+                            mode: "horizontal",
+                            verticalStartPosition: "left",
+                            visibleItems: 6
+                          });
+                        </script>
+                        <p class="ibm-button-link ibm-padding-top-30"
+                          ><a
+                            href="resources/documents/Timeline.pdf"
+                            class="ibm-btn-pri ibm-btn-magenta-50"
+                            target="_blank"
+                            >Detailed Timeline "PDF"</a
+                          ></p
+                        >
+                      </div>
+
+                      <div
+                        id="Toolkit"
+                        class="ibm-grid-col-sm-4-4 ibm-left ibm-padding-top-30 ibm-padding-content ibm-padding-bottom-30 ibm-margin-top-2"
+                        style="background: rgba(255, 255, 255, 0.8);"
+                      >
+                        <h1 class="ibm-h1 ibm-padding-bottom-30">Toolkit</h1>
+                        <div class="ibm-card__image ibm-padding-top-1">
+                          <img
+                            src="./resources/images/helpingsites.png"
+                            alt="Helping Sites"
+                            width="120"
+                            class="ibm-downsize"
+                            align="left"
+                            style="padding-left: 20px;"
+                        /></div>
+                        <p
+                          >Register to
+                          <a
+                            href="http://ibm.biz/egcompetition-dna"
+                            target="_blank"
+                            style="color: #4178be; text-decoration: underline; font-weight: bold"
+                            >IBM Digital - Nation Africa</a
+                          >
+                          to learn and earn the required badges to participate
+                          in the competition.
+                        </p>
+                        <p class="ibm-button-link ibm-padding-top-30"
+                          ><a
+                            class="ibm-btn-pri ibm-btn-magenta-50"
+                            href="resources/documents/Landing%20Page_Required%20Learning.pdf"
+                            target="_blank"
+                            >Required Learning Details "PDF"</a
+                          ></p
+                        >
+                      </div>
+
+                      <div
+                        id="Meet"
+                        class="ibm-grid-col-sm-4-4 ibm-left ibm-padding-top-30 ibm-padding-content ibm-padding-bottom-30 ibm-margin-top-2"
+                        style="background: rgba(255, 255, 255, 0.8);"
+                      >
+                        <h1 class="ibm-h1 ibm-padding-bottom-30">Meet Us</h1>
+                        <p
+                          >IBM is organizing with ITI a half day workshop in 5
+                          major cities in Egypt to announce IBM Digital–Nation
+                          Competition, its rules, guidelines, and how to join.
+                          Register Here to attend IBM workshop.
+                        </p>
+                        <p class="ibm-button-link ibm-padding-top-30"
+                          ><a
+                            class="ibm-btn-pri ibm-btn-magenta-50"
+                            href="https://www.eventbrite.com/e/ibm-digital-nation-competition-mini-innovation-days-tickets-65023283391"
+                            target="_blank"
+                            >Book Your Ticket</a
+                          >
+                        </p>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                <!-- LEADSPACE_END -->
-            </header>
-            <!--Social Media-->
-            <!-- TODO: Add Social Links-->
-            <div class="icon-bar" style="display: none;">
-                <a href="https://www.facebook.com/sharer.php?t=ShareThis&u=https%3A%2F%2Fdeveloper.ibm.com%2Fafrica%2Fegypt-competition%2F"
-                    target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
-                <a href="https://twitter.com/intent/tweet?text=IBM%20Digital%20Nation%20Egypt%20Competition&url=https%3A%2F%2Fdeveloper.ibm.com%2Fafrica%2Fegypt-competition%2F"
-                    target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/shareArticle/?title=IBM%20Digital%20Nation%20Egypt%20Competition&url=https%3A%2F%2Fdeveloper.ibm.com%2Fafrica%2Fegypt-competition%2F"
-                    target="_blank" class="linkedin"><i class="fa fa-info" aria-hidden="true"></i></a>
-            </div>
-            <!--Social Media-->
-            <main role="main" aria-labelledby="ibm-pagetitle-h1">
-                <div id="ibm-pcon">
-                    <div id="ibm-content">
-                        <div id="ibm-content-body" style="padding-top: 0%">
-                            <div id="ibm-content-main">
-                                <div class="ibm-band ibm-alternate-background ibm-padding-top-90 ibm-padding-bottom-90"
-                                    data-widget="parallaxscroll"
-                                    style="color: black; background-image: url(resources/images/611636354.jpg)">
-                                    <div class="ibm-grid-container">
-                                        <div id="Details"
-                                            class="ibm-grid-col-sm-4-4  ibm-padding-content ibm-padding-top-30 ibm-padding-bottom-30 ibm-margin-bottom-2"
-                                            style="background: rgba(255, 255, 255, 0.8); ">
-                                            <h1 class="ibm-h1 ibm-padding-bottom-30">Competition Details</h1>
-                                            <p>IBM is announcing IBM Digital – Nation Competition in collaboration with
-                                                <a href="http://www.iti.gov.eg/" target="_blank"
-                                                    style="color: #4178be; text-decoration: underline; font-weight: bold">Information
-                                                    Technology Institute (ITI)</a> and the <a
-                                                    href="https://www.amcham.org.eg/" target="_blank"
-                                                    style="color: #4178be; text-decoration: underline; font-weight: bold">American
-                                                    Chamber of Commerce (AmCham)</a>. The competition addresses Egypt
-                                                pollution
-                                                issues (air, water, noise, light, soil, etc...) and the solutions that
-                                                can
-                                                be proposed by Egyptian youth to deal with escalating pollution crisis.
-                                                Emerging Technologies such as AI, IoT, Cloud, Analytics, and Blockchain,
-                                                coupled by smart innovative IT developers and research, can help reduce
-                                                pollution. <br />
-                                                <br />
-                                                IBM aims to leverage its latest MEA academic initiative <a
-                                                    href="http://ibm.biz/egcompetition-dna" target="_blank"
-                                                    style="color: #4178be; text-decoration: underline; font-weight: bold">IBM
-                                                    Digital - Nation Africa</a> , and latest emerging technologies via
-                                                IBM
-                                                Cloud to help developers learn, innovate, and build solutions to help
-                                                Egypt
-                                                reduce pollution and prevent disasters like drought, floods, and massive
-                                                fatal diseases like cancer, strokes, and hypertension.
-                                            </p>
+              </div>
+              <!--  -->
 
-                                        </div>
+              <div class="ibm-grid-container">
+                <div
+                  id="Partners"
+                  class="ibm-grid-col-sm-4-4  ibm-center ibm-padding-border-left ibm-padding-content ibm-padding-top-30 ibm-padding-bottom-30 ibm-padding-left-30 ibm-margin-bottom-2 "
+                  style="background: rgba(255, 255, 255, 0.8); "
+                >
+                  <div class="ibm-padding-bottom-1 ibm-padding-content">
+                    <h1 class="ibm-h1 ibm-padding-bottom-30">Our Partners</h1>
+                  </div>
 
-                                        <div id="Timeline"
-                                            class="ibm-grid-col-sm-4-4 ibm-left ibm-padding-top-30 ibm-padding-content ibm-padding-bottom-30 ibm-margin-top-2"
-                                            style="background: rgba(255, 255, 255, 0.8);">
-                                            <h1 class="ibm-h1 ibm-padding-bottom-30">Timeline</h1>
-
-                                            <br>
-
-                                            <div style="text-align: center; border: black">
-                                                <h1 class="ibm-h1 ibm-padding-bottom-20">4 July</h1>
-                                                <h3 class="ibm-h3 ibm-padding-bottom-20">Registration Start</h3>
-                                            </div>
-
-                                            <hr>
-
-                                            <div class="timeline timeline--loaded timeline--horizontal"
-                                                style="opacity: 1;">
-                                                <div class="timeline__wrap">
-                                                    <div class="timeline__items"
-                                                        style="width: 1210.67px; height: 979px; transform: translate3d(0px, 0px, 0px);">
-                                                        <div class="timeline__item"
-                                                            style="width: 151.333px; height: 497px; transform: translateY(482px);">
-                                                            <div class="timeline__item__inner">
-                                                                <div class="timeline__content__wrap">
-                                                                    <div class="timeline__content">
-                                                                        <h2>4 July - 6 August</h2>
-                                                                        <p>Complete Core Skills Track</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="timeline__item"
-                                                            style="width: 151.333px; height: 482px;">
-                                                            <div class="timeline__item__inner">
-                                                                <div class="timeline__content__wrap">
-                                                                    <div class="timeline__content">
-                                                                        <h2>9 August - 3 September</h2>
-                                                                        <p>Complete Specialization Track</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="timeline__item"
-                                                            style="width: 151.333px; height: 497px; transform: translateY(482px);">
-                                                            <div class="timeline__item__inner">
-                                                                <div class="timeline__content__wrap">
-                                                                    <div class="timeline__content">
-                                                                        <h2>12 September</h2>
-                                                                        <p>Attend Team Formation & Ideation Day @ ITI
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="timeline__item"
-                                                            style="width: 151.333px; height: 482px;">
-                                                            <div class="timeline__item__inner">
-                                                                <div class="timeline__content__wrap">
-                                                                    <div class="timeline__content">
-                                                                        <h2>13 September - 19 September</h2>
-                                                                        <p>Create Project Video</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="timeline__item"
-                                                            style="width: 151.333px; height: 497px; transform: translateY(482px);">
-                                                            <div class="timeline__item__inner">
-                                                                <div class="timeline__content__wrap">
-                                                                    <div class="timeline__content">
-                                                                        <h2>3 October - 4 October</h2>
-                                                                        <p>Attend Hackathon @ IBM</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="timeline__item"
-                                                            style="width: 151.333px; height: 482px;">
-                                                            <div class="timeline__item__inner">
-                                                                <div class="timeline__content__wrap">
-                                                                    <div class="timeline__content">
-                                                                        <h2>5 October - 25 October</h2>
-                                                                        <p>Finalize work on projects</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <hr style="margin-top: 10px">
-                                                <div style="text-align: center; margin-top: 20px">
-                                                    <h1 class="ibm-h1 ibm-padding-bottom-20">26 October</h1>
-                                                    <h3 class="ibm-h3 ibm-padding-bottom-20">Winner Announcement</h3>
-                                                </div>
-                                                <br>
-                                                <button class="timeline-nav-button timeline-nav-button--prev"
-                                                    disabled="" style="top: 482px;">Previous
-                                                </button>
-                                                <button class="timeline-nav-button timeline-nav-button--next"
-                                                    style="top: 482px;">Next
-                                                </button>
-                                                <span class="timeline-divider" style="top: 482px;"></span>
-                                            </div>
-                                            <script type="text/javascript" src="dist/js/timeline.min.js"></script>
-                                            <script>
-                                                timeline(document.querySelectorAll(".timeline"), {
-                                                    forceVerticalMode: 900,
-                                                    mode: "horizontal",
-                                                    verticalStartPosition: "left",
-                                                    visibleItems: 6
-                                                });
-                                            </script>
-                                            <p class="ibm-button-link ibm-padding-top-30"><a
-                                                    href="resources/documents/Timeline.pdf"
-                                                    class="ibm-btn-pri ibm-btn-magenta-50" target="_blank">Detailed
-                                                    Timeline "PDF"</a></p>
-                                        </div>
-
-                                        <div id="Toolkit"
-                                            class="ibm-grid-col-sm-4-4 ibm-left ibm-padding-top-30 ibm-padding-content ibm-padding-bottom-30 ibm-margin-top-2"
-                                            style="background: rgba(255, 255, 255, 0.8);">
-                                            <h1 class="ibm-h1 ibm-padding-bottom-30">Toolkit</h1>
-                                            <div class="ibm-card__image ibm-padding-top-1">
-                                                <img src="./resources/images/helpingsites.png" alt="Helping Sites"
-                                                    width="120" class="ibm-downsize" align="left"
-                                                    style="padding-left: 20px;" /></div>
-                                            <p>Register to <a href="http://ibm.biz/egcompetition-dna" target="_blank"
-                                                    style="color: #4178be; text-decoration: underline; font-weight: bold">IBM
-                                                    Digital -
-                                                    Nation Africa</a> to learn and earn the required badges
-                                                to participate in the competition.
-                                            </p>
-                                            <p class="ibm-button-link ibm-padding-top-30"><a
-                                                    class="ibm-btn-pri ibm-btn-magenta-50"
-                                                    href="resources/documents/Landing%20Page_Required%20Learning.pdf"
-                                                    target="_blank">Required Learning Details "PDF"</a></p>
-                                        </div>
-
-                                        <div id="Meet"
-                                            class="ibm-grid-col-sm-4-4 ibm-left ibm-padding-top-30 ibm-padding-content ibm-padding-bottom-30 ibm-margin-top-2"
-                                            style="background: rgba(255, 255, 255, 0.8);">
-                                            <h1 class="ibm-h1 ibm-padding-bottom-30">Meet Us</h1>
-                                            <p>IBM is organizing with ITI a half day workshop in 5
-                                                major cities in Egypt to announce IBM Digital–Nation
-                                                Competition, its rules, guidelines, and how to join.
-                                                Register Here to attend IBM workshop.
-                                            </p>
-                                            <p class="ibm-button-link ibm-padding-top-30"><a
-                                                    class="ibm-btn-pri ibm-btn-magenta-50"
-                                                    href="https://www.eventbrite.com/e/ibm-digital-nation-competition-mini-innovation-days-tickets-65023283391"
-                                                    target="_blank">Book Your Ticket</a>
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
+                  <div class="ibm-columns" style="color: white">
+                    <div class="ibm-col-6-3" style="padding: 25px">
+                      <div class="ibm-card--noborder">
+                        <div class="ibm-card__image  ">
+                          <a href="http://www.iti.gov.eg/" target="_blank">
+                            <img
+                              src="./resources/images/iti.png"
+                              alt="iti"
+                              width="180"
+                              class="ibm-downsize"
+                            />
+                          </a>
                         </div>
-                        <!--  -->
-
-                        <div class="ibm-grid-container">
-                            <div id="Partners"
-                                class="ibm-grid-col-sm-4-4  ibm-center ibm-padding-border-left ibm-padding-content ibm-padding-top-30 ibm-padding-bottom-30 ibm-padding-left-30 ibm-margin-bottom-2 "
-                                style="background: rgba(255, 255, 255, 0.8); ">
-                                <div class="ibm-padding-bottom-1 ibm-padding-content">
-                                    <h1 class="ibm-h1 ibm-padding-bottom-30">Our Partners</h1>
-                                </div>
-
-                                <div class="ibm-columns" style="color: white">
-                                    <div class="ibm-col-6-3" style="padding: 25px">
-                                        <div class="ibm-card--noborder">
-                                            <div class="ibm-card__image  ">
-                                                <a href="http://www.iti.gov.eg/" target="_blank">
-                                                    <img src="./resources/images/iti.png" alt="iti" width="180"
-                                                        class="ibm-downsize" />
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="ibm-col-6-3" style="padding: 25px">
-                                        <div class="ibm-card--noborder">
-                                            <div class="ibm-card__image ibm-padding-top-1">
-                                                <a href="https://www.amcham.org.eg/" target="_blank">
-                                                    <img src="./resources/images/amcham.png" alt="Am Cham" width="220"
-                                                        class="ibm-downsize" />
-
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="registrationInviteFooter"
-                            class="ibm-columns ibm-padding-top-1 ibm-background-blue-40 ibm-col-12-12"
-                            style="margin: 0px !important; width: 100% !important;">
-                            <div class="ibm-col-12-12 ibm-vertical-center ibm-center">
-                                <div class="ibm-col-12-12" style="margin: 0 auto;">
-                                    <h2 class="ibm-h2 ibm-padding-top-r1 ibm-textcolor-white-core ibm-bold">
-                                        Register for the competition now!</h2>
-                                    <div class="ibm-columns ibm-padding-top-1 ibm-padding-bottom-1 ibm-vertical-center"
-                                        id="registrationInvite" style="display: block;">
-                                        <div class="ibm-center" style="display: block;">
-                                            <p class="ibm-button-link"><a id="registerUserFooter"
-                                                    class="ibm-btn-pri ibm-btn-white ibm-textcolor-gray-80 ibm-bold reg_link"
-                                                    href="https://docs.google.com/forms/d/1ZFSB2rlB6_m5y0686KbbUj4xbFo0g0KY_ID7WVD6F_4/viewform?edit_requested=true"
-                                                    target="_blank">Register</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                      </div>
                     </div>
+
+                    <div class="ibm-col-6-3" style="padding: 25px">
+                      <div class="ibm-card--noborder">
+                        <div class="ibm-card__image ibm-padding-top-1">
+                          <a href="https://www.amcham.org.eg/" target="_blank">
+                            <img
+                              src="./resources/images/amcham.png"
+                              alt="Am Cham"
+                              width="220"
+                              class="ibm-downsize"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </main>
-        </div>
+              </div>
+
+              <div
+                id="registrationInviteFooter"
+                class="ibm-columns ibm-padding-top-1 ibm-background-blue-40 ibm-col-12-12"
+                style="margin: 0px !important; width: 100% !important;"
+              >
+                <div class="ibm-col-12-12 ibm-vertical-center ibm-center">
+                  <div class="ibm-col-12-12" style="margin: 0 auto;">
+                    <h2
+                      class="ibm-h2 ibm-padding-top-r1 ibm-textcolor-white-core ibm-bold"
+                    >
+                      Register for the competition now!</h2
+                    >
+                    <div
+                      class="ibm-columns ibm-padding-top-1 ibm-padding-bottom-1 ibm-vertical-center"
+                      id="registrationInvite"
+                      style="display: block;"
+                    >
+                      <div class="ibm-center" style="display: block;">
+                        <p class="ibm-button-link"
+                          ><a
+                            id="registerUserFooter"
+                            class="ibm-btn-pri ibm-btn-white ibm-textcolor-gray-80 ibm-bold reg_link"
+                            href="https://docs.google.com/forms/d/1ZFSB2rlB6_m5y0686KbbUj4xbFo0g0KY_ID7WVD6F_4/viewform?edit_requested=true"
+                            target="_blank"
+                            >Register</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
     </div>
 
-
     <div id="ibm-related-content">
-        <div id="ibm-merchandising-module">
-            <!-- MTE will generate this -->
-            <!-- <aside role="complementary" aria-label="Related content"> MTE dynamic modules populate in here. <aside> -->
-            <!-- /MTE -->
-        </div>
+      <div id="ibm-merchandising-module">
+        <!-- MTE will generate this -->
+        <!-- <aside role="complementary" aria-label="Related content"> MTE dynamic modules populate in here. <aside> -->
+        <!-- /MTE -->
+      </div>
     </div>
 
     <!-- FOOTER_BEGIN -->
     <div id="ibm-footer-module"></div>
     <footer id="Contact" role="contentinfo" aria-label="IBM">
-        <div id="ibm-footer">
-        </div>
+      <div id="ibm-footer"> </div>
     </footer>
     <!-- FOOTER_END -->
-</body>
-
+  </body>
 </html>
