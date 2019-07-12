@@ -98,3 +98,6 @@ default behaviour without the media query is to only show the nav links when the
     display: list-item !important;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
