@@ -94,7 +94,7 @@
 /*This media query is used to show the mobilemenu-section for the menu navigation
 default behaviour without the media query is to only show the nav links when the screen is at 900px*/
 
-.ibm-mobilemenu-sitenavmenu>ul>li {
+.ibm-mobilemenu-sitenavmenu > ul > li {
   display: list-item !important;
 }
 
@@ -102,6 +102,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.ibm-feedbacklink{
+.ibm-feedbacklink {
   display: none !important;
 }
